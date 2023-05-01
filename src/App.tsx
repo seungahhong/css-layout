@@ -1,8 +1,14 @@
 import React from 'react';
-import styles from './App.module.scss';
+import { Route, Routes } from 'react-router-dom';
+import TossClone from './TossClone/TossClone';
 
 function App() {
-  return <div className={styles.App} />;
+  return (
+    <Routes>
+      <Route path="/toss" element={<TossClone />} />
+      <Route path="/" element={<div>Clone Coding...</div>} />
+    </Routes>
+  );
 }
 
 export default App;

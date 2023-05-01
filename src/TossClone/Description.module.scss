@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 200px 0;
+  background: #f9fafb;
+
+  p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #191f28;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
