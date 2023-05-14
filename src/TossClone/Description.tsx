@@ -1,4 +1,4 @@
-import React, { forwardRef, ForwardedRef } from 'react';
+import { forwardRef, ForwardedRef } from 'react';
 import styles from './Description.module.scss';
 
 const Description = ({}, ref: ForwardedRef<HTMLElement>) => {
