@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Description from './Description';
 import KeyVisual from './KeyVisual';
+import Remittance from './Remittance';
 import styles from './TossClone.module.scss';
 
 const TossClone = () => {
@@ -18,6 +19,7 @@ const TossClone = () => {
     <main>
       <KeyVisual handleClick={handleArrowLink} />
       <Description ref={descriptionRef} />
+      <Remittance />
     </main>
   );
 };
