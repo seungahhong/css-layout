@@ -1,9 +1,8 @@
-import React, { forwardRef, ForwardedRef, useEffect, useRef } from 'react';
 import cx from 'classnames';
 import useInView from '../helpers/hooks/useInView';
 import styles from './Remittance.module.scss';
 
-const Remittance = ({}, ref: ForwardedRef<HTMLElement>) => {
+const Remittance = () => {
   const { ref: titleRef, inView: titleInView } = useInView();
 
   return (
@@ -25,4 +24,4 @@ const Remittance = ({}, ref: ForwardedRef<HTMLElement>) => {
   );
 };
 
-export default forwardRef<HTMLElement, {}>(Remittance);
+export default Remittance;
