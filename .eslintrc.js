@@ -25,10 +25,18 @@ module.exports = {
     },
   },
   parser: '@babel/eslint-parser',
-
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'no-undef': 'off',
+      },
+    },
+  ],
   rules: {
     'no-var': 'warn', // var 금지
     'no-multiple-empty-lines': 'warn', // 여러 줄 공백 금지
+    'no-empty-pattern': 'warn', // 공백 패턴 금지
     'no-nested-ternary': 'warn', // 중첩 삼항 연산자 금지
     'no-console': 'warn', // console.log() 금지
     'no-unused-vars': 'warn', // 사용하지 않는 변수 금지
@@ -54,5 +62,9 @@ module.exports = {
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
     'jsx-a11y/no-noninteractive-element-interactions': 0,
+    'react/function-component-definition': [
+      2,
+      { namedComponents: ['arrow-function', 'function-declaration'] },
+    ],
   },
 };
