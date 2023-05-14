@@ -57,6 +57,7 @@ module.exports = {
     'react/no-unused-state': 'warn', // 사용되지 않는 state
     'react/jsx-key': 'warn', // 반복문으로 생성하는 요소에 key 강제
     'react/jsx-curly-brace-presence': 'warn', // jsx 내 불필요한 중괄호 금지
+    'react/react-in-jsx-scope': 'off', // suppress errors for missing 'import React' in files
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
