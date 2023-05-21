@@ -4,10 +4,16 @@ import TossClone from './TossClone/TossClone';
 function App() {
   return (
     <>
-      <NavLink to="/toss">토스</NavLink>
+      <NavLink to={`${process.env.PUBLIC_URL}/toss`}>토스</NavLink>
       <Routes>
-        <Route path="/toss" element={<TossClone />} />
-        <Route path="/" element={<div>Clone Coding...</div>} />
+        <Route
+          path={`${process.env.PUBLIC_URL}/toss`}
+          element={<TossClone />}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/`}
+          element={<div>Clone Coding...</div>}
+        />
       </Routes>
     </>
   );
