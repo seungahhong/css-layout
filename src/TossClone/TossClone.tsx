@@ -17,7 +17,7 @@ const TossClone = () => {
   return (
     <main>
       <KeyVisual handleClick={handleArrowLink} />
-      <Description ref={descriptionRef} />
+      <Description descriptionRef={descriptionRef} />
       <Remittance />
     </main>
   );

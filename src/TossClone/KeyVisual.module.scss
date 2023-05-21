@@ -1,3 +1,12 @@
+@keyframes opacity-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .container {
   position: relative;
   height: 100vh;
@@ -7,7 +16,7 @@
     background-image: url('../../public/toss/new_main.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -85px;
+    background-position-y: -65px;
   }
 
   .gradient {
@@ -37,6 +46,9 @@
     flex-direction: column;
 
     .title {
+      opacity: 0;
+      animation: 0.5s ease-in-out 1s 1 normal forwards running opacity-animation;
+
       h1 {
         width: 100%;
         display: flex;

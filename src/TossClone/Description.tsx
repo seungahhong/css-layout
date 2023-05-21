@@ -1,9 +1,12 @@
-import { forwardRef, ForwardedRef } from 'react';
 import styles from './Description.module.scss';
 
-const Description = ({}, ref: ForwardedRef<HTMLElement>) => {
+interface DescriptionProps {
+  descriptionRef: React.RefObject<HTMLElement> | null;
+}
+
+const Description = ({ descriptionRef }: DescriptionProps) => {
   return (
-    <section ref={ref} className={styles.container}>
+    <section ref={descriptionRef} className={styles.container}>
       <p>
         내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.
         <br />
@@ -15,4 +18,4 @@ const Description = ({}, ref: ForwardedRef<HTMLElement>) => {
   );
 };
 
-export default forwardRef<HTMLElement, {}>(Description);
+export default Description;
